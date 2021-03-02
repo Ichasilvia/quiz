@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Soal">
+
+    <TextView
+        android:id="@+id/soal_text"
+        android:layout_width="317dp"
+        android:layout_height="144dp"
+        android:gravity="center"
+        android:text="@string/judul_soal_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/nomor_soal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="@string/judul_soal_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/soal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="343dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689">
+
+        <RadioButton
+            android:id="@+id/jawaban1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="@string/jawaban1_text" />
+
+        <RadioButton
+            android:id="@+id/jawaban2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="@string/jawaban2_text" />
+
+        <RadioButton
+            android:id="@+id/jawaban3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="@string/jawaban3_text" />
+
+        <RadioButton
+            android:id="@+id/jawaban4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="@string/jawaban4_text" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <Button
+            android:id="@+id/hasilButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="#3F51B5"
+            android:onClick="getHasil"
+            android:text="@string/hasil" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="#3F51B5"
+            android:onClick="nextQuestion"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.bankquis;
+package com.example.kuis;
 
 import org.junit.Test;
 

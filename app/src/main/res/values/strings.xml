@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">BANK QUIS</string>
+    <string name="app_name">Kuis</string>
+    <string-array name="quis_choices">
+        <item>Matematika</item>
+        <item>Teknologi Informasi</item>
+        <item>Geografi</item>
+    </string-array>
+    <string name="copyright">Copyright @ Icha Silvia</string>
+    <string name="quizh">QUIZY</string>
+    <string name="your_challenger">Your Challenger</string>
+    <string name="judul_soal_text">-</string>
+    <string name="jawaban1_text">-</string>
+    <string name="jawaban2_text">-</string>
+    <string name="jawaban3_text">-</string>
+    <string name="jawaban4_text">-</string>
+    <string name="hasil">Hasil</string>
+    <string name="next">Next</string>
+    <string name="selesai">SELESAI</string>
+    <string name="back">BACK</string>
+    <string name="your_result">YOUR RESULT</string>
 </resources>
